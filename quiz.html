@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Quiz, Build Your Beat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-plaid">
+
+<div class="wrap">
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Build Your Beat <span class="nav__byline">with Bella</span></a>
+    <div class="nav__links">
+      <a href="shop.html">SHOP</a>
+    </div>
+  </nav>
+</div>
+
+<div class="quiz-shell">
+  <div id="quiz-progress" class="quiz-progress"></div>
+  <div id="quiz-root"></div>
+</div>
+
+<!--
+  Netlify only detects forms present in the static HTML at deploy time —
+  it can't see the one the quiz engine builds dynamically in JS. This
+  invisible twin has the exact same name + fields so Netlify registers
+  it and the JS-submitted version above gets accepted. Don't delete it.
+-->
+<form name="face-files-quiz" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="face-files-quiz" />
+  <input name="bot-field" />
+  <input name="name" type="text" />
+  <input name="email" type="email" />
+  <input name="answers" type="text" />
+</form>
+
+<script src="quiz-data.js"></script>
+<script src="quiz-engine.js"></script>
+</body>
+</html>
