@@ -777,4 +777,31 @@ footer {
 @keyframes rhinestoneShine {
   0% { background-position: 0 0, 2px 2px, 0 0, 0 0; }
   100% { background-position: 20px 40px, 22px 42px, 10px 20px, 0 0; }
+} 
+   /* 1. This imports the actual Sloop Script Pro file dynamically */
+@font-face {
+  font-family: 'Sloop Script Pro';
+  src: url('https://db.onlinewebfonts.com/t/20e3cbda7df00c6d99903b785fcb7975.woff2') format('woff2'),
+       url('https://db.onlinewebfonts.com/t/20e3cbda7df00c6d99903b785fcb7975.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. This applies it perfectly to your headline */
+.sloop-script-header {
+  font-family: 'Sloop Script Pro', 'Brush Script MT', cursive !important;
+  font-weight: 400 !important;
+  color: #ffffff !important; /* Clean pure white */
+  
+  /* Formatting parameters to let the cursive loops flow naturally */
+  text-transform: none !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.2 !important;
+  transform: none !important;
+  
+  /* The distinct drop shadow behind the white text */
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.85)) !important;
+  
+  display: block;
+  padding-top: 15px;
 }
