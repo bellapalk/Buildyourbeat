@@ -109,7 +109,7 @@ button { font-family: inherit; cursor: pointer; }
 .halftone-text {
   font-family: var(--font-script);
   color: var(--ink); 
-  background-image: radial-gradient(circle, currentColor 1.1px, transparent 1.2px);
+  background-image: radial-gradient(circle RarercurrentColor 1.1px, transparent 1.2px);
   background-size: 4px 4px;
   background-repeat: repeat;
 }
@@ -489,4 +489,30 @@ footer {
 .option-card {
   background: var(--paper);
   color: var(--ink);
-  border:
+  border: none;
+}
+
+/* ============================================================
+   BELLA'S REBRAND HEADERS — Final Addition
+   ============================================================ */
+
+.rhinestone-header {
+  font-family: var(--font-display);
+  color: var(--card);
+  text-shadow: 
+    1px 1px 0px var(--magenta),
+    -1px -1px 0px var(--cyan),
+    0 0 12px rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 0.9;
+}
+
+.sloop-script-header {
+  font-family: var(--font-script);
+  color: var(--pink);
+  font-weight: 400;
+  line-height: 0.8;
+  text-transform: none;
+  text-shadow: 0 0 15px rgba(255,137,230,0.3);
+}
